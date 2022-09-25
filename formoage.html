@@ -1,0 +1,52 @@
+ <html>
+<head>
+<title>Forms</title>
+</head>
+<body>
+<form name="frmDataEntry" action="info.html" method="get">
+<h1 align="center">Data Entry Form</h1>
+<pre>
+Name : <input type="text" name="txt" id="txt" value="" placeholder="Enter your name" maxlength="20" required disabled  />
+</br>
+<!....value is default value i.e to be prescent>
+Password : <input type="password" name="passwd" id="passwd" value="" placeholder="Enter your password" maxlength="15" required/>
+</br>
+Gender : <input type="radio" name="radio" id="radio" value="M"checked/>Male     <input type="radio" name="radio" id="radio" value="F"/>Female
+<!....Here since when on ebutton is selected and other shoukd be deselected
+we have to provide same names to both buttons>
+Are you physically chalanged ?
+  <input type="radio" name="phy" id="phy" value="Y" checked/>Yes
+  <input type="radio" name="phy" id="phy" value="N"/>No
+skills : 
+      <input type="checkbox" name="check" id="check" value="c"checked/>C
+      <input type="checkbox" name="check" id="check" value="cpp"/>C++
+      <input type="checkbox" name="check" id="check" value="java" />JAVA
+      <input type="checkbox" name="check" id="check" value="python"/>PYTHON
+      <input type="checkbox" name="check" id="check" value="c#"/>C#
+Qualification :
+
+<select name="slctQualification" multiple>
+<option value="i"> Intern pu</option>
+<option value="u"> UG under graduate</option>
+<option value="p"> PG</option>
+<option value="m"> MSc</option>
+</select>
+Qualification :
+
+<select name="slctQualification">
+<option value="i"> Intern pu</option>
+<option value="u"> UG under graduate</option>
+<option value="p"> PG</option>
+<option value="m"> MSc</option>
+</select>
+
+Address :
+
+<textarea rows="10" cols="20" wrap="physical">
+</textarea>
+
+<input type="submit" value="SUBMIT"/>     <input type="RESET" value="RESET"/>
+</pre>
+</form>
+</body>
+</html >
